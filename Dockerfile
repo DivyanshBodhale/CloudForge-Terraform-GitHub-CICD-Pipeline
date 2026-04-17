@@ -1,8 +1,8 @@
-from nginx
+FROM nginx
 
 WORKDIR /app
 
 COPY index.html /usr/share/nginx/html/
 
-Expose 80 
+EXPOSE 80 
 
