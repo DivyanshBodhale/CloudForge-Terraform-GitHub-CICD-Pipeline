@@ -1,8 +1,9 @@
-FROM nginx
+FROM nginx:latest
 
-WORKDIR /app
+# Remove default nginx content
+RUN rm -rf /usr/share/nginx/html/*
 
-COPY  .  . 
+# Copy your project files
+COPY . /usr/share/nginx/html
 
-EXPOSE 80 
-
+EXPOSE 80
