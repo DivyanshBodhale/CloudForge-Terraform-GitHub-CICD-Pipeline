@@ -2,7 +2,7 @@ from nginx
 
 WORKDIR /app
 
-COPY . /app/index.html /ver/www/html/
+COPY index.html /usr/share/nginx/html/
 
 Expose 80 
 
