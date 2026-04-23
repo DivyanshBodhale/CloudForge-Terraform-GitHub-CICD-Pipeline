@@ -1,1 +1,7 @@
+# Code linting and security checks for DevSecOps pipeline
 
+name : Code linting 
+
+on : 
+    push :
+        branch : [main, develop]
