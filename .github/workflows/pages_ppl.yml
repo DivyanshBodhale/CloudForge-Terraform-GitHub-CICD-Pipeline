@@ -1,0 +1,35 @@
+name: Code-linting # workflow name 
+ 
+on:
+  workflow_dispatch:
+
+jobs:
+   
+  ci-for-portfolio: # job name 
+    runs-on: ubuntu-latest
+
+    steps:  # this containe all the steps inside a job 
+
+# code checkout / coping row code to runner 
+       - name: code checkout
+         uses: actions/checkout@v4
+
+
+# configuring/setuping  github pages for to upload of runner 
+       - name: setups pages
+         uses: actions/configure-pages@v4
+
+
+# uploading statis source code (not row code )(Artifact to the server for deployment )
+
+       - name: upload static file to server 
+         uses: actions/upload-pages-artifacts@v4
+
+
+#CD part devployed with github pages 
+       - name: deploy 
+         uses: actions/devploy-pages@v4
+
+
+  
+    
