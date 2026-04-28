@@ -1,8 +1,29 @@
 name: Code-linting 
  
 on: 
-  push:
-    branches: [main, develop]
-    
+  push: 
+    branches: 
+             - main 
+
 jobs:
+   
+  ci-for-portfolio:
+    runs-on: ubuntu-latest
+
+    steps:
+
+       - name: code checkout
+         uses: actions/checkout@v4
+
+       - name: tesups pages
+         uses: actions/configure-pages@v4
+
+       - name: upload static file to server 
+         uses: actions/upload-pages-artifacts@v4
+
+       - name: deploy 
+         uses: actions/devploy-pages@v4
+
+
+  
     
