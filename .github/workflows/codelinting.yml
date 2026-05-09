@@ -9,7 +9,7 @@ jobs:
     code-linting:
 
        name: html code lint
-       runs-on: ubuntu-lateast 
+       runs-on: ubuntu-latest
 
        steps: 
 
