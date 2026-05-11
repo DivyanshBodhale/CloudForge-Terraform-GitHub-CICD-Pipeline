@@ -1,9 +1,9 @@
 name: code linting html 
 
 on: 
-    push: 
-      branches: main 
-    
+  #  push: 
+   #   branches: main 
+     workflow_call:
 jobs:
 
     code-linting:
