@@ -23,3 +23,4 @@ CloudForge-Terraform-GitHub-CICD-Pipeline: Terraform &amp; GitHub Actions CI/CD 
 ## 5- monitoring and observatory 
 
 dependemcy scan worklvow is not written yet 
+tests part aslo 
