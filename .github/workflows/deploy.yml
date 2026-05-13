@@ -1,0 +1,38 @@
+name: deploye
+
+on: 
+    push: 
+        branches:
+             - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+
+jobs: 
+
+   deploye:  
+          runs-on: ubuntu-latest 
+          environment:
+            name: github-pages
+    
+          steps: 
+           - name: codechekcout
+             uses: actions/checkout@v4
+
+           - name: Configure GitHub Pages
+             uses: actions/configure-pages@v5
+      
+           - name: upload artifacts
+             uses: actions/upload-pages-artifact@v4
+             with: 
+              path: . 
+
+           - name: deploye to github actions pages 
+             id: deployment 
+             uses: actions/deploy-pages@v4
+
+           - name: takes url for the pages deployment 
+             run: echo " site url is ${{ steps.deployment.outputs.page_url }} "
