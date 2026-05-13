@@ -1,4 +1,4 @@
-FROM alpine:3.23.5
+FROM alpine:3.20
 
 # Remove default nginx content
 RUN rm -rf /usr/share/nginx/html/*
