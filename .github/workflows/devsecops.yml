@@ -37,6 +37,12 @@ jobs:
 
     # CD : Deploy to Production 
     deploy:
+
+        permissions:
+              contents: read
+              pages: write
+              id-token: write
+
         needs: [trivy]
         uses: ./.github/workflows/deploy-to-server.yml
         secrets: inherit
