@@ -11,6 +11,11 @@ jobs:
     # CI (Continous Integration with Security Scanning)
     code-quality:
         uses:  ./.github/workflows/code-quality.yml
+    
+    sast:
+        uses: ./.github/workflows/sast.yml
+        secrets: inherit
+
 
     secrets-scan:
         uses: ./.github/workflows/secrets-scan.yml
