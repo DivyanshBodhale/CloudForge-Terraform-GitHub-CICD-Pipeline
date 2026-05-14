@@ -11,8 +11,8 @@ CloudForge-Terraform-GitHub-CICD-Pipeline: Terraform &amp; GitHub Actions CI/CD 
 ## 3- DevSecOps Pilpline 
  1. Checkout Code
  2. Linting
- 3. Unit Testing
-  4. SAST (Security Scan)
+ 3. Static Application Security test 
+ 4.
  5. Build Docker Image
  6. Image Scan
  7. Push to Registry
