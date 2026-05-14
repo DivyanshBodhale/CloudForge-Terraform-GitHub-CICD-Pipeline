@@ -1,10 +1,10 @@
 name: DevSecOps End To End Pipeline
 
 on: 
-    workflow_call:
+    # workflow_call:
         
-    # push:
-    #     branches: [main]
+    push:
+        branches: [main]
 
 jobs:
 
