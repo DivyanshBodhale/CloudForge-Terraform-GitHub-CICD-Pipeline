@@ -20,6 +20,9 @@ CloudForge-Terraform-GitHub-CICD-Pipeline: Terraform &amp; GitHub Actions CI/CD 
  9. DAST (optional)
 ## 4- Terraform 
      - complete infra 
+
+     <img width="1353" height="807" alt="image" src="https://github.com/user-attachments/assets/d88b7b86-1aaa-4f2d-adc1-bf9a15fa17b4" />
+
 ## 5- monitoring and observatory 
 
 dependemcy scan worklvow is not written yet 
