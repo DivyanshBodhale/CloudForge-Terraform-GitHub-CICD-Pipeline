@@ -18,7 +18,10 @@ CloudForge-Terraform-GitHub-CICD-Pipeline: Terraform &amp; GitHub Actions CI/CD 
  7. Push to Registry
  8. Deploy
  9. DAST (optional)
-## 4- Terraform 
+
+## 4- Infrastructure 
+
+  1. Terraform 
    <img width="1353" height="807" alt="image" src="https://github.com/user-attachments/assets/a39a9b1c-88a9-4ea1-9e64-790714b0e032" />
 
 
