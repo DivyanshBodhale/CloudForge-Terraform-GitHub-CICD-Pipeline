@@ -77,3 +77,24 @@ Docker Container on EC2
 │
 ▼
 Users
+
+
+## AWS Cloud Architecture
+
+
+## Terraform 
+
+```bash
+terraform init
+```
+```bash 
+terraform validate
+```
+```
+terraform plan
+```
+```bash
+terraform apply
+ ```
+
+<img width="1353" height="807" alt="image" src="https://github.com/user-attachments/assets/cfc02664-bb72-4b37-95c8-7784577c1749" />
