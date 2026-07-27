@@ -77,7 +77,7 @@ Docker Container on EC2
 │
 ▼
 Users
-
+```
 
 ## AWS Cloud Architecture
 
