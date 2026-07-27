@@ -1,41 +1,79 @@
-# CloudForge-Terraform-GitHub-CICD-Pipeline
-CloudForge-Terraform-GitHub-CICD-Pipeline: Terraform &amp; GitHub Actions CI/CD Pipeline Designed an end-to-end DevOps pipeline using Terraform for infrastructure provisioning and GitHub Actions for automated build, test, and deployment.
+# ☁️ CloudForge – Terraform | GitHub Actions | Docker | AWS CI/CD Pipeline
 
-#tech stack 
-## 1- Frontend 
-1. HTML
-2. CSS
-3. JS
-## 2- Backend 
-1. Node.js + ExpressFast APIs, JavaScript everywhere
+> A production-inspired DevOps project demonstrating Infrastructure as Code (IaC), CI/CD automation, containerization, security scanning, and AWS deployment using Terraform and GitHub Actions.
 
-## 3- Database 
-1.  MySQLStructured data, relations
-# CI/CD : GitHub Actions (DevSecOps)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4?style=for-the-badge&logo=terraform)
+![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?style=for-the-badge&logo=amazonaws)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker)
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-2088FF?style=for-the-badge&logo=githubactions)
+![Trivy](https://img.shields.io/badge/Trivy-Security-blue?style=for-the-badge)
 
-## steps: 
+---
 
-## 1- Docker File  ( DONE )
-## 2- docker compose  (NO YET )
-## 3- DevSecOps Pilpline 
- 1. Checkout Code
- 2. Linting
- 3. Static Application Security test 
- 4. dependency test 
- 5. Build Docker Image
- 6. Image Scan
- 7. Push to Registry
- 8. Deploy
- 9. DAST (optional)
+# 📌 Project Overview
 
-## 4- Infrastructure 
+CloudForge is a complete DevOps automation project that provisions AWS infrastructure using **Terraform**, builds and containerizes a web application with **Docker**, performs **DevSecOps security scanning**, and automatically deploys the application through **GitHub Actions**.
 
-  1. Terraform 
-   <img width="1353" height="807" alt="image" src="https://github.com/user-attachments/assets/a39a9b1c-88a9-4ea1-9e64-790714b0e032" />
+The project demonstrates an end-to-end DevOps workflow similar to what is used in production environments.
 
-## 5- monitoring and observatory 
- 1. argoCD
- 2. grophana dashbord 
+---
 
+# 🚀 Features
 
-.
+- Infrastructure as Code (Terraform)
+- Automated CI/CD using GitHub Actions
+- Dockerized Application
+- Static Code Analysis (SAST)
+- Secret Scanning
+- Dependency Scanning
+- Dockerfile Linting
+- Docker Image Vulnerability Scanning
+- Automated Deployment to AWS EC2
+- AWS Application Load Balancer
+- AWS CloudFront Distribution
+- AWS WAF Protection
+- AWS SNS Notifications
+- Production-ready Terraform Structure
+
+---
+
+# 🏗️ Architecture
+
+```
+
+Developer
+│
+▼
+GitHub Repository
+│
+▼
+GitHub Actions CI/CD
+├── Code Quality
+├── Tests
+├── SAST
+├── Secret Scan
+├── Dependency Scan
+├── Docker Lint
+├── Docker Build
+└── Image Scan
+│
+▼
+Docker Hub (Optional)
+│
+▼
+Terraform
+│
+├── VPC
+├── Security Groups
+├── EC2
+├── ALB
+├── CloudFront
+├── WAF
+├── SNS
+└── RDS
+│
+▼
+Docker Container on EC2
+│
+▼
+Users
